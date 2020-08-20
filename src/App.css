@@ -1,0 +1,284 @@
+*{
+    font-family: 'Tahoma', Geneva, sans-serif;
+    font-weight: bolder;
+}
+
+/* LIGHT MODE */
+
+.LightApp{
+    color: indigo;
+    width: 40%;
+    margin: 5vh auto 5vh auto;
+    min-height: 90vh;
+    border-radius: 20px 8px 20px 20px;
+    box-shadow: 0px 0px 10px 2px lightgray;
+    transition: all 0.4s ease-in-out;
+    border-right: 4px solid #282c34;
+    border-bottom: 4px solid #282c34;
+}
+.LightAppToggle{
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+}
+.LightAppToggle > button{
+    color: indigo;
+    padding: 10px;
+    margin: 4px;
+    border: lightgray;
+    border-radius: 6px 1px 6px 6px;
+    box-shadow: 1px 2px 2px 1px lightgray;
+}
+.LightAppMain{
+    width: 80%;
+    margin: 10px auto 10px auto;
+    min-height: 20vh;
+}
+.LightAppMain h3{
+    margin: 0;
+}
+.LightMainDisplay{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.LightMainTotal{
+    font-size: 1.4rem;
+    padding: 10px;
+}
+.LightMainDisplayBox{
+    width: 180px;
+    text-align: center;
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 10px 4px 10px 10px;
+    box-shadow: 1px 2px 2px 1px lightgray;
+    border-right: 4px solid indigo;
+    border-bottom: 4px solid indigo;
+}
+.LightMainDisplayBox > div{
+    padding: 4px;
+}
+.LightexpenseList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.expenseListName{
+    width: 60px;
+}
+.expenseListAmount{
+    width: 60px;
+}
+.LightexpenseList > li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 6px 1px 6px 6px;
+    box-shadow: 1px 2px 2px 1px lightgray;
+    transition: all 0.4s ease-in-out;
+}
+.LightexpenseList > li > span > button{
+    border-radius: 6px 1px 6px 6px;
+    border: .4px solid #dada;
+    box-shadow: 0.5px 1px 1px 0.5px lightgray;
+}
+input{
+    border: none;
+    padding: 4px;
+}
+.Lightaddexpense{
+    width: 100%;
+}
+.Lightaddexpense > input{
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin: 4px;
+    border: lightgray;
+    border-radius: 6px 1px 6px 6px;
+    box-shadow: 1px 2px 2px 1px lightgray;
+}
+.Lightaddexpense > button{
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin: 4px;
+    border: lightgray;
+    border-radius: 6px 1px 6px 6px;
+    box-shadow: 1px 2px 2px 1px lightgray;
+}
+.Danger{
+    color: red;
+}
+.Normal{
+    color: green;
+}
+.Blur{
+    -webkit-filter: blur(3px); 
+	-moz-filter: blur(3px); 
+	-o-filter: blur(3px); 
+	-ms-filter: blur(3px); 
+	filter: blur(3px); 
+}
+.LightexpenseListEdit{
+    width: 200px;
+    text-align: center;
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 20px;
+    border-radius: 20px 8px 20px 20px;
+    box-shadow: 1px 2px 40px 20px lightgray;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-in-out;
+}
+.hidden{
+    display: none;
+}
+/* DARK MODE */
+
+.DarkApp{
+    color: white;
+    width: 40%;
+    margin: 5vh auto 5vh auto;
+    min-height: 90vh;
+    border-radius: 20px 8px 20px 20px;
+    box-shadow: 0px 0px 10px 2px #282c34;;
+    background-color: #282c34;
+    transition: all 0.4s ease-in-out;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+}
+.DarkAppToggle{
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+}
+.DarkAppToggle > button{
+    color: #282c34;
+    padding: 10px;
+    margin: 4px;
+    border: lightgray;
+    border-radius: 6px 1px 6px 6px;
+    box-shadow: 1px 2px 2px 1px black;
+}
+.DarkAppMain{
+    width: 80%;
+    margin: 10px auto 10px auto;
+    min-height: 20vh;
+}
+.DarkAppMain h3{
+    margin: 0;
+}
+.DarkMainDisplay{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.DarkMainTotal{
+    font-size: 1.4rem;
+    padding: 10px;
+}
+.DarkMainDisplayBox{
+    width: 180px;
+    text-align: center;
+    display: flex;
+    background-color: lightgrey;
+    flex-direction: column;
+    color: #282c34;
+    font-size: 1.1rem;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 10px 4px 10px 10px;
+    box-shadow: 1px 2px 2px 1px black;
+    border-right: 4px solid grey;
+    border-bottom: 4px solid grey;
+}
+.DarkMainDisplayBox > div{
+    padding: 4px;
+}
+.DarkexpenseList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.DarkexpenseList > li{
+    color: #282c34;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 6px 1px 6px 6px;
+    box-shadow: 1px 2px 2px 1px black;
+    transition: all 0.4s ease-in-out;
+}
+.DarkexpenseList > li > span > button{
+    background-color: lightgrey;
+    border: .4px solid #dada;
+    border-radius: 6px 1px 6px 6px;
+    box-shadow: 0.5px 1px 1px 0.5px grey;
+}
+.Darkaddexpense{
+    width: 100%;
+}
+.Darkaddexpense > input{
+    background-color: lightgrey;
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin: 4px;
+    border: #282c34;;
+    border-radius: 6px 1px 6px 6px;
+    box-shadow: 1px 2px 2px 1px black;
+}
+.Darkaddexpense > button{
+    background-color: grey;
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin: 4px;
+    border: #282c34;;
+    border-radius: 6px 1px 6px 6px;
+    box-shadow: 1px 2px 2px 1px black
+}
+.DarkexpenseListEdit{
+    width: 200px;
+    text-align: center;
+    display: flex;
+    background-color: grey;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 20px;
+    border-radius: 20px 8px 20px 20px;
+    box-shadow: 1px 2px 40px 20px black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-in-out;
+}
+.incomeBorder{
+    border-right: 4px solid green;
+    border-bottom: 4px solid green;
+}
+.expenseBorder{
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+}
+@media only screen and (max-width: 1000px) {
+    .LightApp, .DarkApp{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .LightApp, .DarkApp{
+        width: 90%;
+    }
+}
